@@ -22,7 +22,7 @@
                                 <!-- Nom input-->
                                 <h4 class="text-center">@lang('lang.english')*</h4>
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" name="name" type="text" placeholder="Entrez votre nom..." data-sb-validations="required"/>
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Entrez votre nom..." data-sb-validations="required" value="{{ old('name') }}"/>
                                     <label for="name">@lang('lang.file')</label>
                                     @if($errors->has('name'))
                                     <div class="text-danger mt-2">{{ $errors->first('name') }}</div>
@@ -34,7 +34,7 @@
                                 <!-- Name input-->
                                 <h4 class="text-center">@lang('lang.french')*</h4>
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="nom" name="nom" type="text" placeholder="Entrez votre nom..." data-sb-validations="required"/>
+                                    <input class="form-control" id="nom" name="nom" type="text" placeholder="Entrez votre nom..." data-sb-validations="required" value="{{ old('nom') }}"/>
                                     <label for="nom">@lang('lang.file')</label>
                                     @if($errors->has('nom'))
                                     <div class="text-danger mt-2">{{ $errors->first('nom') }}</div>
