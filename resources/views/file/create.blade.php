@@ -46,7 +46,9 @@
                             <!-- File input-->
                             <div class="form-floating mb-5 text-center">
                                 <input name="file" type="file" data-sb-validations="required"/>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Vous devez entrer votre nom.</div>
+                                @if($errors->has('file'))
+                                    <div class="text-danger mt-2">{{ $errors->first('file') }}</div>
+                                @endif
                             </div>
 
                             <!-- Submit success message-->

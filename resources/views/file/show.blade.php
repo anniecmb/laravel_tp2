@@ -16,6 +16,7 @@
 
                 @if($locale === 'fr')
                 <h2 class="text-center mt-0"> <i class="bi-file-earmark-arrow-down fs-1 text-primary"></i> @if(isset($file->nom)) {{ $file->nom }} @else {{ $file->name }} @endif </h2>
+                <h6 class="text-center mt-0"> {{ $file->file_name }} </h6>
                 <hr class="divider" />
                 <div class="justify-content-center">
                     <div class="text-center">
@@ -26,6 +27,7 @@
                     <hr class="divider" />
                 @else
                 <h2 class="text-center mt-0"> <i class="bi-file-earmark-arrow-down fs-1 text-primary"></i> {{ $file->name }}</h2>
+                <h6 class="text-center mt-0"> {{ $file->file_name }} </h6>
                 <hr class="divider" />
                 <div class="justify-content-center">
                     <div class="text-center">

@@ -40,6 +40,7 @@ class FileController extends Controller
         $request->validate([
             'name' => 'required|min:2',
             'nom' => 'required|min:2',
+            'file' => 'required|mimes:zip, doc, pdf',
         ]);
         
         // // Vérifiez si le fichier a été téléchargé avec succès
